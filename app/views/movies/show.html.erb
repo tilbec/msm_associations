@@ -38,8 +38,8 @@
           <% @movie.characters.each do |character| %>
             <li class="list-group-item">
               <a href="/actors/<%= character.actor_id %>">
-              <%= Actor.find_by({:id => character.actor_id}).name %>
-              </a>
+                <%= Actor.find_by({:id => character.actor_id}).name %>
+                </a>
               (<%= character.name %>)
             </li>
           <% end %>
